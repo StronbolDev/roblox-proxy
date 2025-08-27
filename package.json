@@ -1,13 +1,13 @@
 {
   "name": "roblox-proxy",
   "version": "1.0.1",
-  "type": "module",
   "private": true,
-  "scripts": {
-    "start": "node server.js"
-  },
+  "type": "module",
   "engines": {
     "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
   },
   "dependencies": {
     "compression": "^1.7.4",
