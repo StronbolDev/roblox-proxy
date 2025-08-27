@@ -93,7 +93,6 @@ app.all(["/catalog/*", "/games/*"], async (req, res) => {
     }
   };
 
-  // 3 tries with jitter
   const waits = [0, 200, 400].map(ms => ms + Math.floor(Math.random() * 150));
   for (let i = 0; i < waits.length; i++) {
     if (waits[i]) await new Promise(r => setTimeout(r, waits[i]));
